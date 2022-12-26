@@ -6,4 +6,7 @@ Data Description: Each sample is a Numpy array of size (1,3,128,17,2), represent
 
 Difficulty
 1. CNN/RNN/GCN/Transformer are applicable to this task, how to achieve the best effect? 
+Adopting the integration of RNN, GCN and Transformer to extract spatio-temporal features.
+
 2. How to deal with a small sample size: Is generation or data enhancement worth trying?
+DataFrame extraction. The dataframes of the original samples will be drawn every step size and integrated into a new sample with shape [1, 2, 48, 17].
